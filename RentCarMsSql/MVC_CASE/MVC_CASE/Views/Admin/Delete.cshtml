@@ -1,0 +1,20 @@
+﻿@model MVC_CASE.Models.Car
+
+@{
+    ViewData["Title"] = "Araba Sil";
+}
+
+<h2 class="text-xl font-bold mb-4 text-red-600">Bu arabayı silmek istediğinize emin misiniz?</h2>
+
+<div class="space-y-2">
+    <p><strong>Marka:</strong> @Model.Brand</p>
+    <p><strong>Model:</strong> @Model.Model</p>
+    <p><strong>Yıl:</strong> @Model.Year</p>
+    <p><strong>Fiyat:</strong> ₺@Model.Price</p>
+</div>
+
+<form asp-action="DeleteConfirmed" method="post">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit" class="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 mt-4">Sil</button>
+    <a asp-action="Index" class="ml-4 text-gray-600 hover:underline">İptal</a>
+</form>

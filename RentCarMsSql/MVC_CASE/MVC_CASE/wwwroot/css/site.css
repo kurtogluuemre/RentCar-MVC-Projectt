@@ -1,0 +1,50 @@
+.card {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+    .card:hover {
+        transform: scale(1.02);
+    }
+
+.btn-success {
+    transition: background-color 0.3s ease;
+}
+
+    .btn-success:hover {
+        background-color: #218838;
+    }
+body {
+    background-color: #2c2c2c; /* koyu gri arka plan */
+    color: #f0f0f0; /* açýk yazýlar */
+}
+
+.navbar {
+    background-color: #001f3f !important; /* lacivert navbar */
+}
+
+.card {
+    background-color: #3a3a3a; /* kartlarýn arka planý */
+    color: #f0f0f0;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+    .card:hover {
+        transform: scale(1.02);
+    }
+
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+    transition: background-color 0.3s ease;
+}
+
+    .btn-success:hover {
+        background-color: #218838;
+    }
+
+a {
+    color: #17a2b8;
+}
